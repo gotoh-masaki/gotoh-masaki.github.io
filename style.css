@@ -5,31 +5,58 @@
 }
 
 
+body {
+  font-family: sans-serif;
+  }
+  
+
 
 p{
   font-family:fantasy;
   font-size:50px;
-  color: red;
   padding:0;
   margin:0 auto;
+}
+
+.h1 {
+  font-size: 40px;
+  color: rgb(10, 150, 240);
+}
+.h2 {
+  font-size: 25px;
+  color: rgb(10, 150, 240);
+}
+.t {
+  font-size: 20px;
+  color: rgb(10, 150, 240);
 }
 
 
 
 .gradient { 
 	background:radial-gradient(#fff, #56C500); 
-	height: 650px;
+	height: 730px;
 	border: 1px solid #333;
   margin:0 auto;
   text-align: center;
 }
 
-.aa { 
+.tab { 
 	margin:0 auto;
   text-align: center;
 }
-#userImg,
-#npcImg{
+
+#userImg,#npcImg{
   visibility: hidden;
+}
+
+
+
+.box1 {
+  margin:0 auto;
+  text-align: center;
+  border: 5px dashed blue;
+  padding: 0em;
+  width: 600px;
 }
 

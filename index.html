@@ -3,29 +3,28 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="theme-color" content="#000000">
   <link rel="stylesheet" href="style.css"><!-- CSSにつなぐ-->
 </head>
 
-
 <body>
   <div class="gradient">
-    <h1>Rock-Paper-Scissors</h1>
-    <h2>choose your hand</h2>
+    <h1 class="h1">Rock-Paper-Scissors</h1>
+    <div class="box1">
+      <h2 class="h2">choose your hand</h2>
+
+      <table class="tab">
+        <tr>
+          <td><img src="img/rockScreen.png" onclick="rpsGame(0)"></td>
+          <td><img src="img/ScissorsScreen.png" onclick="rpsGame(1)"></td>
+          <td><img src="img/paperScreen.png" onclick="rpsGame(2)"></td>
+        </tr>
+      </table>
+    </div>
     
-    <table class="aa">
+    <table class="tab">
       <tr>
-        <td><img src="img/rockScreen.png" onclick="rpsGame(0)"></td>
-        <td><img src="img/ScissorsScreen.png" onclick="rpsGame(1)"></td>
-        <td><img src="img/paperScreen.png" onclick="rpsGame(2)"></td>
-      </tr>
-    </table>
-    
-    <table class="aa">
-      <tr>
-        <th>your hand</th>
-        <th>NPC hand</th>
+        <th class="t">your hand</th>
+        <th class="t">NPC hand</th>
       </tr>
       <tr>
         <td><img src="img/rockScreen.png" id="userImg" width="200px" height="200PX"></td>
