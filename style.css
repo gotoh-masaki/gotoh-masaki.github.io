@@ -1,0 +1,35 @@
+
+
+.resizeimage img {
+  width: 100%; 
+}
+
+
+
+p{
+  font-family:fantasy;
+  font-size:50px;
+  color: red;
+  padding:0;
+  margin:0 auto;
+}
+
+
+
+.gradient { 
+	background:radial-gradient(#fff, #56C500); 
+	height: 650px;
+	border: 1px solid #333;
+  margin:0 auto;
+  text-align: center;
+}
+
+.aa { 
+	margin:0 auto;
+  text-align: center;
+}
+#userImg,
+#npcImg{
+  visibility: hidden;
+}
+
