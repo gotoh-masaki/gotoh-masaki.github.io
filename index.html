@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="style.css"><!-- CSSにつなぐ-->
+</head>
+
+
+<body>
+  <div class="gradient">
+    <h1>Rock-Paper-Scissors</h1>
+    <h2>choose your hand</h2>
+    
+    <table class="aa">
+      <tr>
+        <td><img src="img/rockScreen.png" onclick="rpsGame(0)"></td>
+        <td><img src="img/ScissorsScreen.png" onclick="rpsGame(1)"></td>
+        <td><img src="img/paperScreen.png" onclick="rpsGame(2)"></td>
+      </tr>
+    </table>
+    
+    <table class="aa">
+      <tr>
+        <th>your hand</th>
+        <th>NPC hand</th>
+      </tr>
+      <tr>
+        <td><img src="img/rockScreen.png" id="userImg" width="200px" height="200PX"></td>
+        <td><img src="img/rockScreen.png" id="npcImg" width="200px" height="200PX"></td>
+      </tr>
+      <tr>
+        <td colspan="2" id="res">
+          <p id="result"></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
