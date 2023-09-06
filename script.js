@@ -1,16 +1,13 @@
-
-
-
 function rpsGame(user) {
     const npcRPS = ["rockScreen.png", "ScissorsScreen.png", "paperScreen.png"];
     const userRPS = ["rockScreen.png", "ScissorsScreen.png", "paperScreen.png"];
     const npc = Math.floor(Math.random() * 3);
     const userImg = document.getElementById("userImg");
     userImg.src = "img/" + userRPS[user];
-    document.querySelector("#userImg").style.visibility = "visible"
+    document.querySelector("#userImg").style.visibility = "visible";
     const npcImg = document.getElementById("npcImg");
     npcImg.src = "img/" + npcRPS[npc];
-    document.querySelector("#npcImg").style.visibility = "visible"
+    document.querySelector("#npcImg").style.visibility = "visible";
     let rpsResult;
     let rpsColor;
     if(user === npc){
@@ -40,30 +37,31 @@ function rpsGame(user) {
 }
 
 
-
-
-// function rpsGame(user) {
-//     const npcRPS = ["rockScreen.png", "ScissorsScreen.png", "paperScreen.png"];
-//     const userRPS = ["rockScreen.png", "ScissorsScreen.png", "paperScreen.png"];
-//     const npc = Math.floor(Math.random() * 3);
-//     const userImg = document.getElementById("userImg");
-//     userImg.src = "img/" + userRPS[user];
-//     document.querySelector("#userImg").style.visibility = "visible"
-//     const npcImg = document.getElementById("npcImg");
-//     npcImg.src = "img/" + npcRPS[npc];
-//     document.querySelector("#npcImg").style.visibility = "visible"
-//     const result = [["Draw", "Your win", "Your Loss"],["Your Loss", "Draw", "Your win"],["Your win", "Your Loss", "Draw"]];
-// let rpsColor;
-// if("Draw" === result[user][npc]){
-//     rpsColor = "yellow";
-// } else if("Your win" === result[user][npc]){
-//     rpsColor = "red";
-// } else {
-//     rpsColor = "blue";
-// }
-// document.getElementById("result").style.color = rpsColor;
-// document.getElementById("result").textContent = result[user][npc];
-// }
+/*
+縮小版
+*/
+function rpsGame(user) {
+    const npcRPS = ["rockScreen.png", "ScissorsScreen.png", "paperScreen.png"];
+    const userRPS = ["rockScreen.png", "ScissorsScreen.png", "paperScreen.png"];
+    const npc = Math.floor(Math.random() * 3);
+    const userImg = document.getElementById("userImg");
+    userImg.src = "img/" + userRPS[user];
+    document.querySelector("#userImg").style.visibility = "visible";
+    const npcImg = document.getElementById("npcImg");
+    npcImg.src = "img/" + npcRPS[npc];
+    document.querySelector("#npcImg").style.visibility = "visible";
+    const result = [["Draw", "Your win", "Your Loss"],["Your Loss", "Draw", "Your win"],["Your win", "Your Loss", "Draw"]];
+    let rpsColor;
+    if("Draw" === result[user][npc]){
+        rpsColor = "yellow";
+    } else if("Your win" === result[user][npc]){
+        rpsColor = "red";
+    } else {
+        rpsColor = "blue";
+    }
+    document.getElementById("result").style.color = rpsColor;
+    document.getElementById("result").textContent = result[user][npc];
+}
 
 
 
@@ -109,3 +107,5 @@ function rpsGame(user) {
 // document.getElementById("result").style.color = rpsColor;
 // document.getElementById("result").textContent = result[user][npc];
 // }
+
+

@@ -26,6 +26,12 @@ p{
   font-size: 25px;
   color: rgb(10, 150, 240);
 }
+
+.h {
+  font-size: 40px;
+  color: rgb(180, 40, 200);
+}
+
 .t {
   font-size: 20px;
   color: rgb(10, 150, 240);
@@ -40,6 +46,7 @@ p{
   margin:0 auto;
   text-align: center;
 }
+
 
 .tab { 
 	margin:0 auto;
